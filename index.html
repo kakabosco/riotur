@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projeto Bootstrap</title>
+        <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+        <style>
+            .carousel-inner {
+                height: 70vh;
+            }
+
+            @media (max-width: 768px) {
+            .carousel-inner {
+                height: 40vh;
+            }
+        }
+
+
+            .custom-card .card-img-top {
+                height: 400px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            id="carousel-example"
+            class="carousel carousel-fade slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="lib/imagens/rio1.jpg" />
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="lib/imagens/rio2.jpg" />
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="lib/imagens/rio3.jpg" />
+                </div>
+            </div>
+            <button
+                data-bs-target="#carousel-example"
+                data-bs-slide="prev"
+                class="carousel-control-prev"
+                type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+                data-bs-target="#carousel-example"
+                data-bs-slide="next"
+                class="carousel-control-next"
+                type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carousel-example"
+                    class="active"
+                    data-bs-slide-to="0"></button>
+                <button
+                    type="button"
+                    data-bs-target="#carousel-example"
+                    data-bs-slide-to="1"></button>
+                <button
+                    type="button"
+                    data-bs-target="#carousel-example"
+                    data-bs-slide-to="2"></button>
+            </div>
+        </div>
+
+        <div class="container mt-3 mt-md-5 text-center">
+            <h1 class="display-6 display-md-4">Descubra o Rio de Janeiro</h1>
+            <p class="lead">
+                Explore os encantos e maravilhas da Cidade Maravilhosa
+            </p>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card">
+                        <img
+                            src="lib/imagens/tur1.jpg"
+                            class="card-img-top"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Cristo Redentor</h5>
+                            <p class="card-text">
+                                Uma das Sete Maravilhas do Mundo Moderno e um
+                                dos ícones mais reconhecidos do Brasil. Esta
+                                magnífica estátua de Jesus Cristo fica no topo
+                                do Morro do Corcovado e abraça a cidade do Rio
+                                de Janeiro com seus braços abertos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card">
+                        <img
+                            src="lib/imagens/tur2.jpg"
+                            class="card-img-top"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Jardim Botânico</h5>
+                            <p class="card-text">
+                                É um santuário sereno e exuberante, abrigando
+                                uma vasta coleção de plantas tropicais. É um
+                                lugar perfeito para um passeio tranquilo em
+                                família, para apreciar a natureza e aprender
+                                sobre a vasta biodiversidade do Brasil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card">
+                        <img
+                            src="lib/imagens/tur3.jpg"
+                            class="card-img-top"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Pão de Açúcar</h5>
+                            <p class="card-text">
+                                É uma montanha em forma de penhasco situada na
+                                entrada da Baía de Guanabara. É famoso pelo
+                                Bondinho do Pão de Açúcar, um teleférico de
+                                vidro que oferece vistas panorâmicas
+                                espetaculares da cidade e das praias vizinhas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
